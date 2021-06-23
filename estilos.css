@@ -118,10 +118,6 @@ nav a:hover{
 }
 
 
-article[img] h2{
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
 /* --- Principal >> Últimas postagens --- */
 #ultimas-postagens {
   margin-top: 3em;
@@ -149,12 +145,10 @@ article[img] h2{
   display: inline-block;
 }
 
-
-
-
-
 /* --- Principal >> Nuvem de tags --- */
 #tags {
+  position: sticky;
+  top: 20px;
   float: right;
   box-sizing: border-box;
   width: 300px;
@@ -283,4 +277,32 @@ footer .logo-rodape {
   color: black;
   border-color: currentColor;
   box-shadow: none;
+}
+
+.novidade::before{
+  content: "Novidade!";
+  background-color: green;
+  display: inline-block;
+  border-radius: 5%;
+
+}
+img[src^="./imgs/boo1"]{
+  position: fixed;
+  opacity: 0.5;
+  width: 40px;
+  height: 50px;
+  transform: translate(300px, -100px);
+}
+img[src^="./imgs/boo2"]{
+  position: fixed;
+  opacity: 0.5;
+  width: 40px;
+  height: 50px;
+  transform: translate(500px, -200px);
+}
+img[src^="./imgs/boo3"]{
+  position: fixed;
+  opacity: 0.5;
+  width: 40px;
+  transform: translate(600px, 50px);
 }
